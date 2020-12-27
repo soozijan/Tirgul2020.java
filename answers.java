@@ -95,3 +95,163 @@ Scanner scanner = new Scanner(System.in);
         else   {
             System.out.println(number_5);
         }
+
+
+       //   Targil 14 :
+        System.out.println("Please Enter a number for number_6: ");
+           int number_6 = scanner.nextInt();
+          System.out.println("Please Enter a number for number_7: ");
+           int number_7 = scanner.nextInt();
+           if (number_6 != number_7) { 
+               if (number_6 < number_7) {
+                  System.out.println(String.format("%d , %d", number_6, number_7));
+              } else {
+                  System.out.println(String.format("%d, %d", number_7, number_6));
+               }
+          }
+          else    {
+             System.out.println("Equal numbers");
+          }
+
+
+        //Targil 15:
+        
+          for (int index = 0; index <= 10; index ++ )
+         {
+            System.out.println(index);
+          }
+
+
+        //Targil 16:
+           for (int index1 = 1; index1 <= 50; index1 += 2 )
+          {
+             System.out.println(index1);
+          }
+
+
+        // Targil 17:
+
+         Random r = new Random();
+           int random_number;
+           do {
+                random_number = r.nextInt(20) + 10;
+             System.out.println(random_number);
+          }
+          while (random_number != 15);
+         }
+
+
+        //Targil 18:
+          System.out.println("Please enter a number");
+          int number = scanner.nextInt();
+          switch (number) {
+             case 1:
+                 System.out.println("One");
+                 break;
+            case 2:
+                System.out.println("Two");
+               break;
+            case 3:
+                System.out.println("Three");
+                break;
+           default:
+               System.out.println("unknown number");
+         }
+
+
+        //Targil 19 :
+         int count = 0;
+          while (true)   {
+               System.out.println("guess a number");
+           int number_1 =scanner.nextInt();
+              if (number_1 == 0)   {
+                 break;
+             }
+        count += number_1;
+          }
+         System.out.println(count);
+
+
+        //Targil 20:
+         System.out.println("Please Enter a  number with 3 digits ");
+          int number_3digit = scanner.nextInt();
+          int meot = number_3digit/100;
+          System.out.println(String.format("%d" , meot));
+
+
+        //Targil 21 :
+         System.out.println("Enter a number for grades ");
+         int grade = scanner.nextInt();
+         int count = 0;
+         int sum = 0;
+         while (grade != 1) {
+             sum += grade;
+             count++;
+             grade = scanner.nextInt();
+         }
+         System.out.println(String.format("%f" , (float) sum/count));
+
+
+
+
+
+        //Targil 22:
+       System.out.println("Please Enter a number: ");
+        int number;
+         number = scanner.nextInt();
+        int index = 0;
+        int sum = 1;
+       for(index =1; index <= number; index++)
+       {
+           sum*= index;
+       }
+       System.out.println(sum);
+
+
+
+        //Targil 23:
+        System.out.println("Please Enter a number: ");
+        int number = scanner.nextInt();
+        int max = scanner.nextInt();
+        while (number > 0)   {
+            if (max < number)   {
+                max = number;
+            }
+            number = scanner.nextInt();
+             }
+        System.out.println(max);
+
+
+
+        //Targil 24:
+        System.out.println("Please Enter a number: ");
+        int number = scanner.nextInt();
+        for (int index = 0; index <= number; index++)
+            System.out.print("-");
+
+
+        
+
+
+        //Targil 25 :
+        float temperature;
+      do {
+            System.out.println("Please Enter your temperature");
+            temperature = scanner.nextFloat();
+            if (temperature == -1) {
+                System.out.println(String.format("%f > %d", temperature , 37));
+                break;
+            } 
+            else if (temperature <= 37) { // ok ? yes. sababa! more? or ... ok bye bye :) keep on practicing!
+                System.out.println("wellcome");
+            } 
+            else {
+                System.out.println("sorry, you cannot enter");
+           }
+           }
+        while (temperature != -1);
+
+
+
+
+
